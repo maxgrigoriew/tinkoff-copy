@@ -4999,6 +4999,11 @@ vue@^3.2.13:
     "@vue/server-renderer" "3.2.47"
     "@vue/shared" "3.2.47"
 
+vuetify@^3.0.4:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.2.3.tgz#05767c3d88068654b757d33789b8c249f1d38e00"
+  integrity sha512-o7IJm/P5Ttp9ItF1ytQihsLzv4jxIYVfI4Ypkkqc4A7N2MeTmkDOPGbDNUgJ+G1p2upL00LCbc73A9YM8xYVpg==
+
 vuex@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-4.1.0.tgz#aa1b3ea5c7385812b074c86faeeec2217872e36c"

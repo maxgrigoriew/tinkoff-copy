@@ -1,5 +1,14 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <v-text-field
+      v-model="firstname"
+      :counter="10"
+      label="First name"
+      required
+    ></v-text-field>
   </div>
 </template>
+<script setup lang='ts'>
+
+const firstname = '123'
+</script>
