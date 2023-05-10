@@ -1,8 +1,17 @@
-// @import 'vars';
+@import 'vars';
+@import 'fonts';
 
+body {
+  font-family: $Gilroy-400;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
 a {
   display: inline-block;
   color: inherit;
+  font-family: inherit;
   text-decoration: none !important;
   transition: all 0.3s;
 }
