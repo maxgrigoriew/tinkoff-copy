@@ -13,5 +13,16 @@ export default {
 </script>
 <template>
   <is-header-top />
-  <slot />
+  <main class="main">
+    <v-container>
+      <slot />
+    </v-container>
+  </main>
 </template>
+
+<style lang='scss'>
+.main {
+  background: #f6f7f8;
+  min-height: 100vh;
+}
+</style>

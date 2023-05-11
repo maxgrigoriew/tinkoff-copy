@@ -2,12 +2,12 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'home',
+    path: '/business',
+    name: 'business',
     meta: {
       layout: 'DefaultLayout',
     },
-    component: import('../views/HomeView.vue')
+    component: import('../views/business-view.vue')
   },
   {
     path: '/about',
@@ -15,7 +15,7 @@ const routes: Array<RouteRecordRaw> = [
     meta: {
       layout: 'EmptyLayout',
     },
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import('../views/AboutView.vue')
   }
 ]
 

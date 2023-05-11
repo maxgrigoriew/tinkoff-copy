@@ -1,7 +1,5 @@
 <template>
-  <main>
-    <AppLayout />
-  </main>
+  <AppLayout />
 </template>
 
 <script lang="ts">

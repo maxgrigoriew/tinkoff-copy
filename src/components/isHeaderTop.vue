@@ -43,6 +43,7 @@ const menu = ref([
           </router-link>
         </li>
       </ul>
+      <v-button>button</v-button>
     </nav>
   </v-container>
 
@@ -52,6 +53,7 @@ const menu = ref([
 .menu-top {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #dddfe0;
   &__logo {
     margin-right: 48px;
   }
