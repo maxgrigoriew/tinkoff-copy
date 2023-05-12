@@ -43,7 +43,16 @@ const menu = ref([
           </router-link>
         </li>
       </ul>
-      <v-button>button</v-button>
+      <v-btn class="menu-top__btn d-flex align-center" text-color="blue">
+        Войти
+        <v-icon
+          class="mb-2"
+          large
+          color="blue"
+        >
+          mdi-home
+        </v-icon>
+      </v-btn>
     </nav>
   </v-container>
 
@@ -71,11 +80,13 @@ const menu = ref([
     &:hover {
       color: rgba(0, 0, 0, 0.8);
       border-bottom: 2px solid #dddfe0;
-
     }
   }
   &__link:not(:last-child) {
     margin-right: 24px;
+  }
+  &__btn {
+    margin-left: auto;
   }
 }
 </style>
