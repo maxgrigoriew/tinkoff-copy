@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import isCard from '@/components/isCard.vue';
-isCard
 
 const businessIconst = [
   {

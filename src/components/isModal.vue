@@ -1,16 +1,30 @@
-<script setup lang="ts">
-import { ref } from 'vue'
+<script setup lang='ts'>
+import { ref } from 'vue';
+import { defineExpose } from 'vue'
 
-const isOpenModal = ref(true)
+const isOpenModal = ref(false)
 
-const open = () => isOpenModal.value = true
-const close = () => isOpenModal.value = false
+const open = (): void => {
+  isOpenModal.value = true
+}
+const close = (): void => {
+  isOpenModal.value = false
+}
 
+defineExpose({
+  open,
+})
 </script>
 
 <template>
-  <div class="modal" v-if="isOpenModal">
-    <button class="modal__close">
+  <div
+    class="modal"
+    v-if="isOpenModal"
+  >
+    <button
+      class="modal__close"
+      @click='close'
+    >
       <v-icon>
         mdi-close
       </v-icon>

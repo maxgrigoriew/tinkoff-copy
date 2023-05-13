@@ -1,5 +1,8 @@
 <script setup lang='ts'>
 import { ref } from 'vue';
+import IsModal from '@/components/isModal.vue';
+
+const isModal = ref()
 
 const menu = ref([
   {
@@ -15,6 +18,7 @@ const menu = ref([
     link: '/cash'
   }
 ])
+
 </script>
 
 <template>
@@ -43,7 +47,11 @@ const menu = ref([
           </router-link>
         </li>
       </ul>
-      <v-btn class="menu-top__btn d-flex align-center" text-color="blue">
+      <v-btn
+        class="menu-top__btn d-flex align-center"
+        text-color="blue"
+        @click="isModal.open()"
+      >
         Войти
         <v-icon
           class="mb-2"
@@ -54,6 +62,9 @@ const menu = ref([
         </v-icon>
       </v-btn>
     </nav>
+
+    <IsModal ref="isModal" />
+
   </v-container>
 
 </template>
